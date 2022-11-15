@@ -5,7 +5,13 @@ body{
 .switch{
     display:none
 }
-#women{margin-top:200px;}
+
+#women{margin-top:200px}
+
+@media (min-width:847px) {
+    #mountain,#women{display:block !important;}
+    
+}
 #nav{
     display:flex;
    position: sticky;
