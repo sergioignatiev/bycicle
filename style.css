@@ -1,0 +1,136 @@
+#nav{
+    display:flex;
+   
+    
+    background: rgb(244 244 244);
+  }
+  
+  
+  .tab{
+    background-color: rgb(217 217 217);
+    display: flex;
+    width:267px;
+    height:73px;
+   
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-family: "Montserrat";
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+  }
+  a{color:black;}
+  
+  .tab:hover{
+    background-color: white;
+  }
+  img{
+    width:358px;
+    height:232px;
+    margin-top:40px;
+  }
+  .imageteg{
+    display:flex;
+   
+  }
+  .h1{
+    margin-left: 71px;
+    width:35%;
+  
+    font-weight: 700;
+    
+  }
+  .h1 p{font-weight: 400;font-size: 16px;
+  line-height: 24px;
+  }
+  hr{width:90%}
+  .ul{margin-left: 37px;}
+  .ul p{margin-left: 22px;}
+  ol{ columns: 2;
+  width: 70%;
+  }
+  ol.li{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .bottom{
+    margin-left: 60px;
+    
+  }
+  input{
+    width:351px;
+    height:52px;
+    padding-left: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(217, 217, 217, 1) ;
+  }
+  .add{background: blue;
+  width:128px;
+  height:52px;
+  border-radius: 16px;
+  margin-left: 24px;
+  border:none;
+  
+  }
+  .shadow{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width:726px;
+    height:112px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px 0px rgba(12, 12, 12, 0.1);
+    display:flex;
+    align-items: center;
+  
+  }
+  
+  .ok{
+    margin-left:36px;
+    width:92px;
+    height:52px;
+    border-radius:16px ;
+    background: blue;
+    color:white;
+    border: none;
+  
+  }
+  .cancel{
+    
+    width:92px;
+    height:52px;
+    border-radius:16px ;
+    background: white;
+  
+    border: none;
+  }
+  @media(max-width:846px){
+    img{
+      margin-left: 5%;
+      margin-right: 5%;
+      width:90%;
+      height:auto;
+      content:url('https://sergioignatev.github.io/gitImages/bicicle3.png')}
+    .tab{display: none;}
+    .imageteg{flex-direction: column;}
+    .h1{width:90%;
+    margin-left:5%;
+    margin-right: 5%;
+    }
+    ol{
+      margin-left: 0%;
+      columns: 1;
+    }
+    .ul{margin-left:0%;}
+    .bottom{margin-left: 5%;
+    margin-right:5%;}
+    input{
+      width:95%;
+    
+    }
+    .add{width:100%;margin-left: 0px;
+    margin-top: 15px;}
+    .shadow{
+      width:100%;
+    }
+  }
