@@ -5,13 +5,13 @@ body{
 .switch{
     display:none
 }
-
+#women{margin-top:200px;}
 #nav{
     display:flex;
    position: sticky;
    top:0;
     
-    background: rgb(244 244 244);
+    background:rgb(217 217 217) ;
   }
   
   
@@ -62,11 +62,16 @@ body{
   .ul p{margin-left: 22px;font-size: 18px;font-weight: 500;}
   ol{ columns: 2;
   width: 70%;
+  
   }
+  
   ol.li{
     line-height: 24px;
     font-size: 16px;
     font-weight: 400;
+  }
+  .olmount li{
+    line-height: 42px;
   }
   .olwomen{
    
@@ -140,10 +145,16 @@ li img{
     font-weight: 400;
     font-size: 16px;
     border: none;
+    cursor: hand;
+  }
+  .cancel:hover{
+    background: black;
+    color:white;
+
   }
   @media(max-width:846px){
     #mountain{display:block}
-#women{display:none}
+#women{display:none;margin-top: 10px;}
 .switch{display:flex;
    
     
