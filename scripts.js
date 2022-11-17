@@ -23,7 +23,8 @@ function wSW(){
     }else{
         mount.style.display="block";
         document.getElementsByClassName("fa")[1].classList.add("fa-angle-up")
-        document.getElementsByClassName("fa")[1].classList.remove("fa-angle-down")
+        document.getElementsByClassName("fa")[1].classList.remove("fa-angle-down");
+       
     }
 }
 document.getElementsByClassName("add")[0].addEventListener('click',Add)
