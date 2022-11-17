@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <title>Велосипеды Тест</title>
   <meta charset="utf-8">
   <link rel="icon" type="image/x-icon" href="https://sergioignatev.github.io/gitImages/bicicle3.png">
@@ -15,7 +17,7 @@
     <a href="#"><div class="tab">Горный велосипед</div></a>
     <a href="#w"><div class="tab">Женский велосипед</div></a>
 </div>
-<div class="switch" onclick="mSW()"><div style="margin-left: 5%;">Горный Велосипед </div><i  style="margin-right:5% ;font-size:18px" class="fa fa-angle-up" aria-hidden="true"></i></div>
+<div id="mountSwitch" class="switch" onclick="mSW()"><div style="margin-left: 5%;">Горный Велосипед </div><i  style="margin-right:5% ;font-size:18px" class="fa fa-angle-up" aria-hidden="true"></i></div>
     <div id="mountain">
         <div class="imageteg">
            
@@ -48,7 +50,7 @@
         </div>
             </div>
 
-            <div  class="switch" onclick="wSW()"><div style="margin-left: 5%;">Женский велосипед </div><i style="margin-right:5% ;font-size:18px" class="fa fa-angle-down" aria-hidden="true"></i></div>
+            <div id="womenSwitch"  class="switch" onclick="wSW()"><div style="margin-left: 5%;">Женский велосипед </div><i style="margin-right:5% ;font-size:18px" class="fa fa-angle-down" aria-hidden="true"></i></div>
             <div id="women">
                 <div class="imageteg">
                     <img class="imgmountain"id="imgwomen" src="https://sergioignatev.github.io/gitImages/bicicle2.png"/>
@@ -57,7 +59,7 @@
                     <p>На данном велосипеде имеется 7 скоростей с переключателями от Shimano, а жесткая вилка обеспечивает отличную управляемость. Подходит для катания по асфальтированным поверхностям.</p>
                     </div>
                 </div>
-                <hr></hr>
+                <hr ></hr>
                 <div class="ul">
                     <p>Характеристики</p>
                     <ol class="olwomen">
