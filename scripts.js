@@ -3,7 +3,7 @@ function Toggle(id,target,target2){
         $(id).click(function(){
           $(target).slideToggle(1000);
           $(target2).addClass("animated bounce");
-         
+          $.scrollify.instantNext();
         });
       });
 }
@@ -27,7 +27,7 @@ function mSW(){
 function wSW(){
     
     let mount=document.getElementById("women")
-    if(mount.style.display=="block"){
+    if(mount.style.display=="none"){
         
         document.getElementsByClassName("fa")[1].classList.add("fa-angle-down")
         document.getElementsByClassName("fa")[1].classList.remove("fa-angle-up")
