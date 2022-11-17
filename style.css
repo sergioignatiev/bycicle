@@ -17,7 +17,7 @@ body{
     display:flex;
    position: sticky;
    top:0;
-    
+   z-index: 100; 
     background:rgb(217 217 217) ;
   }
   
