@@ -36,12 +36,12 @@ body{
     border-top-left-radius:20px;
     border-top-right-radius:20px;
   }
-  
+  .tab:hover{
+    color:rgb(57 34 197);
+  }
   a{color:black;text-decoration: none;}
   
-  .tab:hover{
-    background-color: white;
-  }
+  
   img{
     width:358px;
     height:232px;
@@ -154,11 +154,7 @@ li img{
     border: none;
     cursor: hand;
   }
-  .cancel:hover{
-    background: black;
-    color:white;
-
-  }
+  
   @media(max-width:846px){
     #mountain{display:none}
 #women{display:block;margin-top: 10px;}

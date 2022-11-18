@@ -1,27 +1,34 @@
 function Toggle(id,target,target2){
     $(document).ready(function(){
         $(id).click(function(){
-          $(target).slideToggle(1000);
+          $(target).slideToggle(500);
+         
           $(target2).addClass("animated bounce");
-          
+  
         });
       });
 }
+
+
+
 Toggle("#mountSwitch","#mountain",".imgmountain")
 Toggle("#womenSwitch","#women","#imgwomen")
 
 function mSW(){
-    
+ 
     let mount=document.getElementById("mountain")
-    if(mount.style.display=="none"){
+    if(mount.style.display=="block"){
         
-        document.querySelector('i').classList.remove("fa-angle-down")
-        document.querySelector('i').classList.add("fa-angle-up")
+        document.getElementsByClassName("fa")[1].classList.add("fa-angle-up")
+        document.getElementsByClassName("fa")[1].classList.remove("fa-angle-down")
+        
     }else{
         
-        document.querySelector('i').classList.add("fa-angle-down")
-        document.querySelector('i').classList.remove("fa-angle-up")
+        document.getElementsByClassName("fa")[1].classList.add("fa-angle-up")
+        document.getElementsByClassName("fa")[1].classList.remove("fa-angle-down");
+       
     }
+   
 }
 
 function wSW(){
@@ -39,6 +46,13 @@ function wSW(){
        
     }
 }
+
+
+
+
+
+
+
 document.getElementsByClassName("add")[0].addEventListener('click',Add)
 function Add(){
     let inp=document.getElementsByTagName('input')[0].value;
@@ -59,6 +73,8 @@ function scrollFunction() {
     if (document.body.scrollTop > h || document.documentElement.scrollTop > h) {
       document.getElementsByClassName("tab")[0].style.background = " rgb(217 217 217)";
       document.getElementsByClassName("tab")[1].style.background = "white";
+     
+
     } else {
         document.getElementsByClassName("tab")[1].style.background = " rgb(217 217 217)";
         document.getElementsByClassName("tab")[0].style.background = "white";
